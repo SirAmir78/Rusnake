@@ -22,4 +22,8 @@ Before running the game, you need to have the following installed:
 
    ```bash
    git clone https://github.com/SirAmir78/Rusnake.git
-   cd snake-game-rust
+   cd path/to/folder
+   cargo run
+
+better run in full screen
+

@@ -250,8 +250,8 @@ fn main() -> std::io::Result<()> {
     enable_raw_mode()?;
     execute!(sc, Clear(ClearType::All))?;
     let mut world = World::new();
-    let up_down_game_speed = world.screen.max_column;
-    let left_right_game_speed = world.screen.max_row;
+    let up_down_game_speed = world.screen.max_column / 10;
+    let left_right_game_speed = world.screen.max_row / 10;
     while world.status == Status::Alive {
         draw(&mut sc, &mut world)?;
         add_food(&mut sc, &mut world)?;
